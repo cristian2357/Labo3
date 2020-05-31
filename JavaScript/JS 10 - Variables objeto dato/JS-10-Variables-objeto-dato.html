@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        table, td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div-ingreso" style="background-color: lightblue;">
+        <h2>Adicionar persona</h2>
+        <p>Nombre</p>
+        <input type="text">
+        <p>Apellido</p>
+        <input type="text">
+        <p>Fecha de nacimiento</p>
+        <input type="text">
+        <button>Crear persona</button>
+    </div>
+    <div id="div-control" style="background-color: lightgoldenrodyellow;">
+        <h2>Control</h2>
+        <button>Lista personas</button>
+        <button>Ocultar lista</button>
+    </div>
+    <div id="tabla">
+
+    </div>
+</body>
+<script src="JS-10-Variables-objeto-dato.js"></script>
+<script>
+    bindearBotones();
+    ocultarTabla();
+</script>
+
+</html>

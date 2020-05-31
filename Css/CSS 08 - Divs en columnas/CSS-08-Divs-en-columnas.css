@@ -1,0 +1,36 @@
+.contenedor {
+    width: 75%;
+    margin: auto;
+    background-color: lightyellow;
+    display: flow-root;
+    font-size: small;
+}
+
+
+.contenedor>* {
+    background-color: lightblue;
+    width: 30%;
+    margin: 10px;
+    float: left;
+    display: flex;
+    padding: 5%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.divChico {
+    height: 200px;
+    color: red;
+}
+
+.divGrande {
+    height: 500px;
+    color: blue;
+    display: block;
+}
+
+.contenedor>* img {
+    width: 90%;
+    align-self: center;
+}

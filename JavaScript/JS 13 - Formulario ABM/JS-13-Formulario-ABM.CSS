@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#contenedor {
+    width: 50%;
+    height: 40%;
+    background-color: aquamarine;
+    position: fixed;
+    left: 25vw;
+    top: 25vh;
+}
+
+#formulario {
+    background: lightblue;
+    width: 50%;
+    height: 60%;
+}
+
+#botonera {
+    text-align: center;
+    margin-top: 5%;
+}
+
+input,
+label {
+    display: block;
+    margin-left: 15%;
+}
+
+button:not([disabled]) {
+    cursor: pointer;
+}

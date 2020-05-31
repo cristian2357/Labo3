@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor {
+    background-color: lightblue;
+    width: 80%;
+    height: 35%;
+    padding: 2%;
+    margin: auto;
+}
+
+button {
+    width: 30%;
+}
+
+#contenedor div {
+    text-align: center;
+}
+
+input{
+    width: 15%;
+}

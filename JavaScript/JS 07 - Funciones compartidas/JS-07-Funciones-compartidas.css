@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+.content{
+    margin: auto;
+    width: 45%;
+    height: 50%;
+    background-color: gray;
+}
+
+.contenedor-calculadora{
+    padding: 5%;
+    margin: auto;
+    height: 100%;
+}
+
+input{
+    height: 10%;
+    width: 100%;
+    direction: rtl;
+}
+
+.botonera-numeros{
+    background-color: deepskyblue;
+    height: 50%; 
+    width: 100%;
+    text-align: center;
+}
+
+.botonera-numeros button{
+    width: 25%;
+    height: 15%;
+    margin: 2%;
+}
+
+.botonera-acciones{
+    background-color: bisque;
+    height: 40%;
+    padding:1%;
+    margin: auto;
+    text-align: center;   /* centrado horizontal inline: text-align, centrado horizontal block : margin auto */
+    
+}
+
+.botonera-acciones button{
+    width: 40%;
+    height: 40%;
+}
+

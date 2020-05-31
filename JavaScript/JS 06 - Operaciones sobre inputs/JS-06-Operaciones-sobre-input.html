@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Introducir un valor en el cuadro de texto y ejecutar</h1>
+    <input type="text" id="entrada">
+    <button id="btn-muestra-valor">Muestra valor</button>
+    <button id="btn-suma">Suma 1</button>
+    <button id="btn-cuadrado">Eleva al cuadrado</button>
+    <button id="btn-duplica">Multiplica por 2</button>
+</body>
+
+<script>
+    function obtenerNumero() {
+        var valor = document.getElementById("entrada").value
+        if (isNaN(valor))
+            alert("Solo debe ingresar numeros!");
+        return parseInt(valor);
+    }
+
+    function mostrar(numero) {
+        alert("El valor es " + numero);
+    }
+
+    function mostrarSumadoUno(numero) {
+        alert(numero + "+1 = " + (numero + 1));
+    }
+
+    function mostrarCuadrado(numero) {
+        alert(numero + "*" + numero + " = " + (numero * numero));
+    }
+
+    function mostrarDoble(numero) {
+        alert(numero + "*2" + " = " + numero * 2);
+    }
+    
+    document.getElementById("btn-muestra-valor").onclick = function()
+    {
+        mostrar(obtenerNumero());
+    }
+    document.getElementById("btn-suma").onclick = function () {
+        mostrarSumadoUno(obtenerNumero());
+    }
+    document.getElementById("btn-cuadrado").onclick = function () {
+        mostrarCuadrado(obtenerNumero());
+    }
+
+    document.getElementById("btn-duplica").onclick = function () {
+        mostrarDoble(obtenerNumero());
+    }
+</script>
+
+</html>

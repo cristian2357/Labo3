@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.content {
+    height: 100%;
+}
+
+.content {
+    background-color: darkcyan;
+    color: white;
+}
+
+.content>div>h1 {
+    text-align: center;
+}
+
+thead tr {
+    background-color: orange;
+    color: white;
+    height: 8vh;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: purple;
+}
+
+tbody tr:nth-child(even) {
+    background-color: blueviolet;
+}
+
+table {
+    max-height: 40%;
+    height: 40%;
+    width: 100%;
+}
+
+tbody tr {
+    
+    display: block;
+}
+
+thead tr{
+    display: block;
+}
+
+tbody{
+    overflow: auto;
+    display: block;
+    height: 100px;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+    width: 16vw;
+  }
+
+@media(max-width:700px){
+    [campo-dato="mail"]{
+        display: none;
+    }
+    [campo-dato="web"]{
+        display: none;
+    }
+    [campo-dato="twitter"]{
+        display: none;
+    }
+    [campo-dato="skype"]{
+        display: none;
+    }
+}
+

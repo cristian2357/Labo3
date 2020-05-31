@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    color: darkblue;
+    font-size: 30px;
+}
+
+p {
+    color: blue;
+    border-style: solid;
+    border-width: thin;
+    font-style: italic;
+    border-color: blue;
+}

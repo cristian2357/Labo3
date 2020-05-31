@@ -1,0 +1,66 @@
+html,body{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#divFondo {
+    background-color: lightblue;
+    width: 90%;
+    margin: auto;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+#div1 {
+    box-shadow: 16px 8px 2px rgb(126, 125, 125);
+    background: linear-gradient(180deg, orange, white, pink);
+    text-align:center;
+    vertical-align: center;
+}
+
+#div2 {
+    background: radial-gradient(orange,white,pink);
+    
+    
+}
+
+#div3 {
+    box-shadow: 16px 8px 2px rgb(126, 125, 125);
+    background: linear-gradient(45deg, orange, white, pink);
+}
+
+#div4 {
+    background: linear-gradient(45deg, pink, white, orange); 
+}
+
+#div5{
+    background: linear-gradient(45deg, orange, white, pink);
+}
+
+.divDefault {
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#imagenArroyo {
+    width: 50%;
+    
+}
+
+#div1,#div2 > p{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*
+display: flex;
+    justify-content: center;
+    align-items: center;
+    */

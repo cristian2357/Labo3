@@ -1,0 +1,36 @@
+.claseAcotacion {
+    color: blue;
+    border-style: solid;
+    border-width: thin;
+    font-style: italic;
+    border-color: blue;
+    text-align: center;
+}
+
+.claseDestacado{
+    font-weight: bold;
+}
+
+.claseAyuda{
+    border-style: solid;
+    border-color: rgb(211, 191, 11);
+    border-width: thin;
+    width: 50%;
+    font-style: italic;
+    color: rgb(211, 191, 11);
+    text-align: center;
+}
+
+#idUnico{
+    border-style: solid;
+    border-color: red;
+    border-width: thin;
+    width: 25%;
+    font-style:italic;
+    color: red;
+    text-align: center;
+}
+
+.imagenA150{
+    width: 50%;
+}

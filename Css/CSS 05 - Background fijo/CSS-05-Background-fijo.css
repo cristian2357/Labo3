@@ -1,0 +1,33 @@
+span::after {
+    content: '\A';
+    white-space: pre;
+}
+
+#divCeleste {
+    background-color: cadetblue;
+    border-style: solid;
+    border-color: darkblue;
+    width: 25%;
+    height: 500px;
+    margin: auto;
+}
+
+#scrolleable {
+    background-color: lightblue;
+    background-image: url(../../../resources/images/montaña.jpg);  
+    background-repeat: no-repeat;
+    background-position: center;    
+    background-size: contain;           /*Mantener ratio*/
+    border-top-left-radius: 15px;
+    border-style: solid;
+    border-color: red;
+    overflow-y: scroll;
+    color:aqua;
+    margin-left: 5%;
+    margin-top: 8%;
+    margin-right: 15%;
+    margin-bottom: 8%;
+    height: 80%;
+    box-sizing: border-box;
+    padding: 1%;
+}

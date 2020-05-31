@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{             /* Para lograr el display vertical deben estar 100% html,body y nuestro div */
+    height: 100%;
+}
+
+.contenedor-principal{
+    background-color: bisque;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center; /* X e Y */
+    align-items: center;
+
+}
+
+.contenedor-principal > img{
+    width: 40%;
+}

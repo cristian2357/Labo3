@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+
+</head>
+
+<body>
+    <form id="formulario" method="GET">
+        <label for="txtNombre">Ingrese su apellido:</label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre" id="txtNombre" autofocus required />
+        <label for="selectedPaises">Pais</label>
+        <select name="pais" id="selectedPaises">
+            <option value="ARG">Argentina</option>
+            <option value="BR">Brasil</option>
+            <option value="CHL">Chile</option>
+        </select>
+        <input type="submit" value="OK" />
+        <input type="hidden" name="age" value="30" />
+        <label for="chkAbc">ABC?</label>
+        <input type="checkbox" name="ABC" id="chkAbc" />
+        <br />
+        <label for="mayorSi">Mayor de edad</label>
+        <input type="radio" id="mayorSi" name="mayorEdad" value="S" required />
+        <label for="mayorNo">Menor de edad</label>
+        <input type="radio" id="mayorNo" name="mayorEdad" value="N" required />
+
+    </form>
+</body>
+
+</html>

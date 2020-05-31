@@ -1,0 +1,26 @@
+.fondoCeleste{
+    width: 50%;
+    margin: auto;
+    background-color: lightblue;
+}
+
+.fondoVerde{
+    width: 50%;
+    margin: auto;
+    background-color: lightgreen;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.fondoAmarillo{
+    width: 50%;
+    margin: auto;
+    background-color: lightyellow;
+    padding-left: 10%;
+}
+
+span::after{         /* Salto de linea, lo hice asi con etiqueta span porque habia mucho espacio entre lineas*/
+    content: '\A'; 
+    white-space: pre;
+}

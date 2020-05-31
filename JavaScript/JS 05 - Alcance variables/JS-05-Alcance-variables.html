@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <button id="btn-incorrecto">Inicializacion incorrecta</button>
+    <button id="btn-correcto">Inicializacion correcta</button>
+    <button id="btn-mostrar-global">Muestra variable global</button>
+</body>
+<script>
+    var a;
+    
+    var btnCorrecto = document.getElementById("btn-correcto");    
+    btnCorrecto.onclick = function () {
+        a = prompt("Ingrese un valor");
+        alert("El valor de la variable local es " + a + "\nEs de tipo " + typeof(a));
+    };
+
+    var btnIncorrecto = document.getElementById("btn-incorrecto");
+    btnIncorrecto.onclick = function () {
+        var a = prompt("Ingrese un valor");
+        alert("El valor de la variable local es " + a + "\nEs de tipo " + typeof(a));
+    };
+
+    var btnGlobal = document.getElementById("btn-mostrar-global");
+    btnGlobal.onclick = function () {
+        if(!a)
+            alert("La variable no fue inicializada correctamente");
+        else
+            alert("La variable global vale: " + a);
+    };
+</script>
+
+</html>

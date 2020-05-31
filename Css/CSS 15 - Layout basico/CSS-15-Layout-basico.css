@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,.content {
+    height: 100%;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+}
+
+.contenedor{
+    height: 80%;
+}
+
+.contenedor > * {
+    float: left;
+    height: 100%;
+}
+
+nav {
+    background-color: coral;
+    width: 15%;
+    margin: auto;
+}
+
+nav > *{
+    margin: auto;
+}
+
+nav > h2{
+    text-align: center;
+    margin-top: 50%;
+    margin-bottom: 30%;
+}
+
+ul {
+    text-align: center;
+    background-color: gray;
+    width: 60%;
+    height: 30%;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    height: 25%;
+    cursor: pointer;
+}
+
+.main-content {
+    background-color: aliceblue;
+    overflow: auto;
+    font-size: 26px;
+    width: 85%;
+}
+
+footer{
+    clear: both;
+}
+
+header,
+footer {
+    background-color: gray;
+    text-align: center;
+    height: 10%;
+}

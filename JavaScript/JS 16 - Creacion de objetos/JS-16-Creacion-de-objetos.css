@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#contenedor{
+    height: 40vh;
+    width: 40vw;
+    background-color: lightyellow;
+    padding: 1%;
+    margin: auto;
+    margin-top: 20vh;
+    overflow: auto;
+}
+
+.elemento-creado{
+    background-color: cornflowerblue;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 1px solid black;
+    height: 20%;
+    width: 50%;
+}

@@ -1,0 +1,96 @@
+html,
+body,
+.content {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 80%;
+    margin: auto;
+    background-color: coral;
+}
+
+header,
+footer {
+    background-color: orangered;
+    text-align: center;
+    height: 10%;
+}
+
+.main-content {
+    height: 80%;
+}
+
+nav {
+    background-color: orange;
+    height: 10%;
+}
+
+nav * {
+    float: left;
+    width: 100%;
+}
+
+ul{
+    height: 100%;
+}
+
+nav ul li {
+    width: 25%;
+    text-align: center;
+    display: block;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    background-color: darkslategray;
+    color: white;
+}
+
+section {
+    clear: both;
+    height: 90%;
+}
+
+article {
+    float: left;
+    width: 20%;
+    overflow: hidden;
+    height: 100%;
+    border: 1px solid black;
+    border-width: thin;
+}
+
+article p {
+    background-color: gray;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+article img {
+    width: 100%;
+}
+
+footer {
+    clear: both;
+}
+
+@media (max-width:700px)
+{
+    article{
+        width: 50%;
+    }
+    section{
+        overflow: auto;
+    }
+}

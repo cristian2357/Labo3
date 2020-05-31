@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-principal {
+    background-color: aqua;
+    width: 75%;
+    height: 625px;
+    margin: auto;
+}
+
+.interno-1 {
+    background-color: aquamarine;
+    width: 15%;
+    position: absolute;
+    top: 40%;
+}
+
+.interno-2 {
+    background-color: greenyellow;
+    padding: 1%;
+    width: 37%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.interno-2>div>img {
+    float: left;
+    width: 33%;
+    padding: 1px;
+
+}
+
+.interno-3-modal {
+    background-color: gray;
+    opacity: 50%;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    height: 50%;
+    width: 20%;
+}

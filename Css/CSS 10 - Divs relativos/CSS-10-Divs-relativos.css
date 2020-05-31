@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: blue;
+}
+
+.contenedor-principal>p {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.contenedor-principal {
+    background-color: lightyellow;
+    margin: auto;
+    padding-bottom: 1%;
+    width: 80%;
+}
+
+.clase-1 {
+    background-color: green;
+    width: 85%;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.clase-2 {
+    background-color: rgb(255, 230, 0);
+    margin-left: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    width: 50%;
+}
+
+
+.clase-3 {
+    background-color: orange;
+    overflow: auto;
+    margin: auto;
+    margin-right: 25%;
+    width: 50%;
+    height: 100px;
+}
+
+.modal{
+    position: fixed; 
+    height: 150px;
+    width: 50%;
+    background-color: blue;
+    opacity: 50%;
+    overflow-y: scroll;
+    color: white;
+    /*Coordenadas*/
+    top: 30%;
+    left: 30%;
+}

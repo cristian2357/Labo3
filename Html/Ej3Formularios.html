@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ES">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form>
+        <ul>
+            <li>
+                <label for="idApellido">Apellido:</label>
+                <input type="text" name="apellido" id="idApellido" placeholder="Ingresar apellido">
+            </li>
+            <li>
+                <label for="idNombre">Nombre:</label>
+                <input type="text" name="nombre" id="idNombre" placeholder="Ingresar nombre">
+            </li>
+            <li>
+                <label for="idPassword">Contraseña:</label>
+                <input type="text" name="pass" id="idPassword" placeholder="Ingrese contraseña">
+            </li>
+            <li>
+                <label for="idOculto">Oculto:</label>
+                <input type="hidden" name="oculto" id="idOculto" value="xD">
+            </li>
+            <li>
+                <label for="idDeshabilitado">Campo deshabilitado</label>
+                <input type="text" name="inhabilitado" id="idDeshabilitado" placeholder="Valor deshabilitado" value="96">
+            </li>
+            <li>
+                <label for="idReadOnly">Campo solo lectura:</label>
+                <input type="text" name="readOnly" id="idReadOnly" placeholder="Solo lectura">
+            </li>
+            <li>
+                <label for="idCheckDeportes">Practica deportes</label>
+                <input type="checkbox" name="practicaDeportes" id="idDeportes" value="S">
+            </li>
+            <li>
+                <label for="idCheckMusic">Practica musica</label>
+                <input type="checkbox" name="practicaMusica" id="idMusica" value="S">
+            </li>
+            <li>
+                <label for="idCheckPintura">Practica pintura artistica</label>
+                <input type="checkbox" name="practicaPintura" id="idMusica" value="S">
+            </li>
+            <li>
+                <label>Sexo:</label>
+                <label for="idRadioHombre" class="lblSexo">Masculino</label>
+                <input type="radio" name="sexo" id="idRadioHombre" value="hombre">
+                <label for="idRadioMujer" class="lblSexo">Femenino</label>
+                <input type="radio" name="sexo" id="idRadioMujer" value="Mujer" checked>
+            </li>
+            <li>
+                <label for="idEstudios">Estudios cursados:</label>
+                <select id="idEstudios">
+                    <optgroup label="Obligatorios">
+                        <option value="primaria">Primarios</option>
+                        <option value="secundaria">Secundarios</option>
+                    </optgroup>
+                    <optgroup label="No obligatorios">
+                        <option value="terciarios">Terciarios</option>
+                        <option value="universitarios">Universitarios</option>
+                    </optgroup>
+                </select>
+            </li>
+            <li>
+                <label for="idTime">Fecha y hora</label>
+                <input type="datetime-local" id="idTime" name="time">
+            </li>
+            <li>
+                <label for="idColor">Color</label>
+                <input type="color" id="idColor" name="color">
+            </li>
+            <li>
+                <input type="submit" value="Enviar formulario sin validacion">
+            </li>
+            <li>
+                <input type="reset" value="Reset a valores predeterminados">
+            </li>
+        </ul>
+    </form>
+
+    <h1>Formulario con validacion</h1>
+    <form>
+        <ul>
+            <li>
+                <label for="idComentario">Comentario</label>
+                <input type="text" name="comentario" id="idComentario" placeholder="Comentario...">
+            </li>
+            <li>
+                <label for="idEmail">Email</label>
+                <input type="email" name="email" id="idEmail" placeholder="texto@texto.com">
+            </li>
+            <li>
+                <label for="idEntero">Numero entero</label>
+                <input type="text" name="entero" id="idEntero" pattern="[0-9]">
+            </li>
+            <li>
+                <label for="idFloat">Numero decimal</label>
+                <input type="text" name="float" id="idFloat" pattern="[0-9]+.[0-9]">
+            </li>
+            <li>
+                <label for="idUrl">URL</label>
+                <input type="text" name="url" id="idUrl" pattern="http://[a-z]+" placeholder="http://xxx">
+            </li>
+            <li>
+                <input type="submit" value="Enviar formulario con validación">
+            </li>
+            <li>
+                <input type="reset" value="Reset a valores predeterminados">
+            </li>
+        </ul>
+
+    </form>
+</body>
+
+<style>
+    label:not(.lblSexo)::after {           /*Salto de linea despues de todas las labels excepto class lblSexo*/
+        content: '\A'; 
+        white-space: pre;
+    }
+</style>
+
+</html>

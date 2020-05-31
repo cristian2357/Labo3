@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h2>Ejemplos de cambios de estilo dinamicamente</h2>
+    <div>
+        <ul>
+            <h3>Lista con estilo</h1>
+                <li>Texto1</li>
+                <li>Texto2</li>
+                <li>Texto3</li>
+        </ul>
+    </div>
+    <div style="margin-top: 1vh;">
+        <button>Tipo1</button>
+        <button>Tipo2</button>
+        <button>Tipo3</button>
+        <button>Tipo4</button>
+    </div>
+</body>
+<script>
+    var div = document.getElementsByTagName("div")[0];
+    var botones = document.getElementsByTagName("button");
+
+    div.style.width = "20vw"
+    div.style.height = "35vh"
+
+    botones[0].onclick = function() {  
+        div.style.backgroundColor = "lightBlue";
+        div.style.border = "1px solid blue"
+    }
+
+    botones[1].onclick = function() {  
+        div.style.backgroundColor = "red";
+        div.style.border = "1px solid red"
+    }
+
+    botones[2].onclick = function() {  
+        div.style.backgroundColor = "gold";
+        div.style.border = "1px solid orange"
+    }
+    
+    botones[3].onclick = function() {  
+        div.style.backgroundColor = "lightGreen";
+        div.style.border = "1px solid green"
+    }
+
+</script>
+
+</html>
