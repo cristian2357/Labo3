@@ -1,1 +1,1 @@
-<?php require_once("intex.html)" ?>
+<?php require_once("index.html)" ?>
