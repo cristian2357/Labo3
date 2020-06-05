@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="ESP-04-Tabla-formulario.css">
+    </head>
+    <body>
+        <div class="content">
+            <header>
+                <h1>Articulos</h1>
+                <button>Limpiar datos</button>
+                <button>Cargar datos</button>
+                <button>Mostrar form</button>
+            </header>
+            <div class="contenedor-tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CodArt</th>
+                            <th>Familia</th>
+                            <th>Unidad</th>
+                            <th>Descripcion</th>
+                            <th>Fecha alta</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </div>
+            <footer>
+                <h1>Pie</h1>
+            </footer>
+        </div>
+        <div class="modal">
+            <header>
+                <h1>Encabezado modal</h1>
+                <button id="btn-cerrar">Cerrar</button>
+            </header>
+            <div class="formulario-modal">
+                <form>
+                    <div id="div-izquierdo">
+                        <p>Codigo articulo:</p>
+                        <input name="cod" type="text">
+                        <p>Descripcion</p>
+                        <input name="desc" type="text">
+                        <p>Saldo stock:</p>
+                        <input name="saldoStock" type="number">
+                    </div>
+                    <div id="div-derecho">
+                        <p>Familia articulo:</p>
+                        <select>
+    
+                        </select>
+                        <p>Fecha de alta</p>
+                        <input name="fecha" type="date">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="../jquery.js"></script>
+    <script src="ESP-04-Tabla-formulario.js"></script>
+    <script src="JSON-04.js"></script>
+    <script src="JSON-04b.js"></script>
+    <script>
+        $(document).ready(accionesIniciales);
+    </script>
+</html>

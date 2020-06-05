@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.content,
+table {
+    height: 100%;
+}
+
+header,
+footer {
+    height: 10%;
+    background-color: bisque;
+    text-align: center;
+}
+
+header>* {
+    display: inline;
+}
+
+header>button {
+    height: 80%;
+    width: 10%;
+    float: right;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+.contenedor-tabla {
+    height: 80%;
+}
+
+table {
+    display: block;
+}
+
+thead,
+tfoot {
+    background-color: darksalmon;
+    width: 100vw;
+    display: flex;
+    height: 10%;
+    align-items: center;
+}
+
+tbody{
+    height: 80%;
+    display: block;
+    background-color: aliceblue;
+    overflow: auto;
+}
+
+tr {
+    width: 100vw;
+    display: block;
+}
+
+td {
+    width: 16vw;
+}
+
+th {
+    width: 16vw;
+}
+
+tbody tr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: gray;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+/* Styles para modal */
+
+.modal{
+    width: 50%;
+    height: 45%;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    pointer-events: auto;
+}
+
+.modal header {
+    background-color: gray;
+    height: 10%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.formulario-modal{    
+    height: 100%;
+    width: 100%;
+}
+
+.formulario-modal form{
+    height: 100%;
+    width: 100%;
+}
+
+.formulario-modal {
+    height: 90%;
+    background-color: beige;
+}
+
+#div-derecho,
+#div-izquierdo {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 2%;
+}
+
+.formulario-modal form input,
+.formulario-modal form p,
+.formulario-modal form select {
+    height: 15%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.formulario-modal form input[type='submit'] {
+    display: block;
+    position: relative;
+    top: 20%;
+    left: 5%;
+}
+
+input:not([type='submit']), select {
+    font-size: 20px;
+}
+
+#btn-cerrar{
+    margin-top: 0.3%;
+}

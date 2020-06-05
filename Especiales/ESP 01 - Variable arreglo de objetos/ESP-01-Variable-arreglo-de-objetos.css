@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.content {
+    height: 100%;
+}
+
+header,
+footer {
+    background-color: gray;
+    height: 10%;
+    text-align: center;
+}
+
+.contenedor {
+    height: 80%;
+    background-color: bisque;
+}
+
+#div-derecho,
+#div-izquierdo {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 2%;
+}
+
+form {
+    height: 100%;
+}
+
+.contenedor form input,
+.contenedor form p,
+.contenedor form select {
+    height: 15%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor form input[type='submit'] {
+    display: block;
+    position: relative;
+    top: 20%;
+    left: 5%;
+}
+
+input:not([type='submit']), select {
+    font-size: 20px;
+}
