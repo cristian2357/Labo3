@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,.content{
+    height: 100%;
+    width: 100%;
+}
+
+header,footer{
+    background-color: darkcyan;
+    height: 10%;
+    width: 100%;
+}
+
+#div-gris{
+    background-color: gray;
+    height: 80%;
+}
+
+button{
+    height: 10%;
+    width: 10%;
+    background-color: dimgrey;
+    cursor: pointer;
+}
+
+.modal{
+    position: absolute;
+    width: 50vw;
+    height: 60vh;
+    top: 20%;
+    left: 20%;
+
+}
+
+.modal header{
+    height: 10%;
+    background-color: grey;
+}
+
+.modal header button{
+    background-color: antiquewhite;
+    height: 90%;
+    float: right;
+    margin-right: 1%;
+    color: red;
+}
+
+.modal > .div-inputs{
+    height: 90%;
+    background-color: antiquewhite;
+}
+
+.modal .div-inputs > * {
+    margin-left: 1%;
+}
+
+input{
+    display: block;
+}
+

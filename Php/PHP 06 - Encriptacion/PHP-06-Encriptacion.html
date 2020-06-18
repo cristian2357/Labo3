@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        div{
+            display: inline;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <form>
+            <p>Ingrese clave a encriptar</p>
+            <input type="text" name="clave">
+            <input type="submit">
+        </form>
+    </div>
+
+</body>
+<script>
+    var form = document.querySelector("form");
+    form.setAttribute("method", "post");
+    form.action = "respuesta.php";
+</script>
+
+</html>
