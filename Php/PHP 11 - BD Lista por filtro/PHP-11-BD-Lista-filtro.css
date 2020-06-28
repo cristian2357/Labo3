@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+.content,
+table {
+    height: 100%;
+}
+
+header,
+footer {
+    height: 10%;
+    background-color: bisque;
+    text-align: center;
+}
+
+header>* {
+    display: inline;
+}
+
+header>button {
+    height: 80%;
+    width: 10%;
+    float: right;
+    margin-top: 1vh;
+    cursor: pointer;
+}
+
+header>button:nth-child(1) {
+    float: left;
+}
+
+.contenedor-tabla {
+    height: 80%;
+}
+
+table {
+    display: block;
+}
+
+thead,
+tfoot {
+    background-color: darksalmon;
+    display: block;
+    width: 100vw;
+    height: 10%;
+}
+
+thead {
+    height: 20%;
+}
+
+tbody {
+    height: 70%;
+    display: block;
+    background-color: aliceblue;
+    overflow: auto;
+}
+
+tr {
+    width: 100vw;
+}
+
+thead tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+tr>td>input,
+thead>tr>td {
+    height: 100%;
+}
+
+td {
+    width: 16vw;
+    ;
+}
+
+th {
+    width: 16vw;
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: blue;
+    color: white;
+}
+
+tbody tr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+
+td {
+    text-align: center;
+}
+
+tbody>tr:nth-child(odd) {
+    background-color: gray;
+}
+
+tbody>tr:nth-child(even) {
+    background-color: lightgray;
+}
+
+header div {
+    float: right;
+    width: 15%;
+}
+
+header select {
+    width: 90%;
+}
