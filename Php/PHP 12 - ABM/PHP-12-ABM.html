@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="PHP-12-ABM.css">
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <button>Insertar 20 datos "aleatorios"</button>
+            <h1>Articulos</h1>
+            <button>Limpiar datos</button>
+            <button>Cargar datos</button>
+            <button>Alta de datos</button>
+            <div>
+                <p>Orden:</p>
+                <select id="select-columnas"></select>
+            </div>
+        </header>
+        <div class="contenedor-tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>CodArt</th>
+                        <th>Familia</th>
+                        <th>Unidad</th>
+                        <th>Descripcion</th>
+                        <th>Fecha alta</th>
+                        <th>Stock</th>
+                        <th>Mods</th>
+                        <th>Bajas</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+        <footer>
+            <h1>Pie</h1>
+        </footer>
+    </div>
+    <div class="modal alta">
+        <header>
+            <h2>Insertar datos</h2>
+            <button>X</button>
+        </header>
+        <div class="div-inputs">
+            <form>
+                <p>Familia</p>
+                <select id="familia" name="familia" required></select>
+                <p>Unidad medida</p>
+                <select id="unidad" name="unidad" required></select>
+                <p>Descripcion</p>
+                <input type="text" name="descripcion" required>
+                <p>Fecha alta</p>
+                <input type="date" name="fecha_alta" required>
+                <p>Stock</p>
+                <input type="number" name="stock" required>
+                <button class="btn-insertar">Insertar</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal mod">
+        <header>
+            <h2>Modificar datos</h2>
+            <button>X</button>
+        </header>
+        <div class="div-inputs">
+            <form>
+                <p>Familia</p>
+                <select name="familia" required></select>
+                <p>Unidad medida</p>
+                <select name="unidad" required></select>
+                <p>Descripcion</p>
+                <input type="text" name="descripcion" required>
+                <p>Fecha alta</p>
+                <input type="date" name="fecha_alta" required>
+                <p>Stock</p>
+                <input type="number" name="stock" required>
+                <button class="btn-modificar">Modificar</button>                
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../../Especiales/jquery.js"></script>
+<script src="PHP-12-ABM.js"></script>
+
+<script>
+
+</script>
+
+</html>
