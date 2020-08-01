@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body,.content{
+    height: 100%;
+    width: 100%;
+    background-color: darkcyan;
+}
+
+.div-ingreso{
+    background-color: lightblue;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    width: 40%;
+    height: 40%;
+    padding-left: 1%;
+}
+
+.div-ingreso h1{
+    text-align: center;
+}
+
+.div-ingreso input{
+    margin-left: 2%;
+}
+
+.div-ingreso * {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.div-ingreso button {
+    display: block;
+    width: 15%;
+    position: relative;    
+    top: 25%;
+}
